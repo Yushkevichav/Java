@@ -6,7 +6,7 @@ public class Part3 {
         checkOne(1, 2);
     }
 
-    private static int checkOne(int a, int b) {
+    private static int checkOne(int a, int b) { //r
         int result = a + b;
         if (result >= 10 && result <= 20) {
             System.out.println("Число в интервале от 10 до 20");
