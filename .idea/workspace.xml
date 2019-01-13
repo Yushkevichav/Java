@@ -3,6 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="05f4c05a-b239-41d8-8408-dfd806bc9beb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part4_var1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part4_var1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part4_var2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part4_var2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_1/yushkevich/lesson_1/homework/Part6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java" afterDir="false" />
@@ -22,12 +29,12 @@
     <session id="2122986138">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -42,12 +49,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="403" />
+          <entry key="java" value="1122" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="403" />
+          <entry key="JAVA" value="1122" />
         </counts>
       </usages-collector>
     </session>
@@ -57,10 +64,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="120">
+              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <element signature="e#0#812#0" expanded="true" />
+                <element signature="e#0#789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,10 +76,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="195">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
-                <element signature="e#0#620#0" expanded="true" />
+                <element signature="e#238#239#0" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,11 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#818#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -93,11 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#800#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -105,39 +107,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#586#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part5.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#577#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java">
+        <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-              <folding>
-                <element signature="e#0#432#0" expanded="true" />
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#149#150#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -148,13 +135,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java" />
-        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java" />
-        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java" />
         <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var1.java" />
+        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java" />
+        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java" />
+        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java" />
+        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java" />
         <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var2.java" />
         <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part5.java" />
-        <option value="$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java" />
       </list>
     </option>
   </component>
@@ -168,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,12 +185,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547395419325" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547418047940" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -217,8 +204,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Part6">
-    <configuration name="Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yushkevich.lesson_1.homework.Part3" />
+    <configuration name="Part2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yushkevich.lesson_1.homework.Part2" />
       <module name="Java_1" />
       <extension name="coverage">
         <pattern>
@@ -230,8 +217,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Part4_var1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yushkevich.lesson_1.homework.Part4_var1" />
+    <configuration name="Part3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yushkevich.lesson_1.homework.Part3" />
       <module name="Java_1" />
       <extension name="coverage">
         <pattern>
@@ -283,18 +270,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Part3" />
-      <item itemvalue="Application.Part4_var1" />
       <item itemvalue="Application.Part4_var2" />
       <item itemvalue="Application.Part5" />
       <item itemvalue="Application.Part6" />
+      <item itemvalue="Application.Part2" />
+      <item itemvalue="Application.Part3" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Part6" />
         <item itemvalue="Application.Part5" />
         <item itemvalue="Application.Part4_var2" />
-        <item itemvalue="Application.Part4_var1" />
+        <item itemvalue="Application.Part2" />
         <item itemvalue="Application.Part3" />
       </list>
     </recent_temporary>
@@ -312,11 +299,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="826" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -325,15 +321,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32833788" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32833788" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39918256" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32833788" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32970026" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32833788" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32970026" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32833788" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -348,75 +344,55 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        <state relative-caret-position="120">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="e#0#812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#818#0" expanded="true" />
+            <element signature="e#0#789#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="180">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <element signature="e#0#800#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part4_var2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#586#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/yushkevich/lesson_1/homework/Part6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#432#0" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#149#150#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
