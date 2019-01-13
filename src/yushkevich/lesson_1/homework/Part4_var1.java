@@ -7,7 +7,7 @@ import java.util.Scanner;                               //реализовал �
 public class Part4_var1 {
     public static void main(String[] args) {
         System.out.println("Введите число");
-        checkOne();                                     //вызываю метод checkOne без параметров
+        checkOne();
     }
 
     private static void checkOne() {

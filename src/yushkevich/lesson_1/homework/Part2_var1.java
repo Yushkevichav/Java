@@ -2,14 +2,14 @@
 
 package yushkevich.lesson_1.homework;
 
-public class Part2 {
+public class Part2_var1 {
     public static void main(String[] args) {
-        System.out.println(checkOne());
+        System.out.println(checkOne());             //Вызываю на консоль метод checkOne
     }
 
     private static int checkOne() {
         int a = 1, b = 2, c = 3, d = 4,
-                result = a * (b + (c / d));
-        return (result);                                           //возвращаю значение переменной result в main
+                result = a * (b + (c / d));         //инициализировал переменные
+        return (result);                            //возвращаю значение переменной result в main
     }
 }

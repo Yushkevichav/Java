@@ -2,12 +2,12 @@
 
 package yushkevich.lesson_1.homework;
 
-public class Part6 {
+public class Part6_var2 {
     public static void main(String[] args) {
-        System.out.println("Привет, " + checkOne() + "!");
+        checkOne("Андрей");                      //вызываю метод checkOne с заданными параметрами
     }
 
-    private static String checkOne() {
-        return ("Андрей");
+    private static void checkOne(String a) {
+        System.out.println("Привет, " + a + "!");   //вывожу на консоль
     }
 }

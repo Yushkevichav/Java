@@ -4,8 +4,8 @@ package yushkevich.lesson_1.homework;
 
 public class Part4_var2 {
     public static void main(String[] args) {
-        checkOne();                                    //вызываю метод checkOne с заданным параметром
-        if (checkOne() >= 0) {                                      //задал условие: если number >= 0, то выводим "Число положительное"
+        checkOne();
+        if (checkOne() >= 0) {                             //задал условие: если number >= 0, то выводим "Число положительное"
             System.out.println("Число положительное");
         } else {
             System.out.println("Число отрицательное");     //задал условие: во всех остальных случаях выводим "Число отрицательное"
