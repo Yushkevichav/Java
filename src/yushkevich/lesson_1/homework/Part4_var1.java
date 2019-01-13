@@ -1,7 +1,7 @@
 //задание 5
 package yushkevich.lesson_1.homework;
 
-import java.util.Scanner;
+import java.util.Scanner;                       //реализовал при помощи сканера
 
 public class Part4_var1 {
     public static void main(String[] args) {
