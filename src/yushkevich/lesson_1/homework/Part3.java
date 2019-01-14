@@ -2,7 +2,7 @@
 
 package yushkevich.lesson_1.homework;
 
-public class Part3_var2 {
+public class Part3 {
     public static void main(String[] args) {
         checkOne(1, 2);
     }

@@ -2,19 +2,16 @@
 
 package yushkevich.lesson_1.homework;
 
-public class Part5_var2 {
+public class Part5 {
     public static void main(String[] args) {
-        checkOne(1);
+        System.out.println(checkOne(1));
     }
 
-    private static void checkOne(int a) {
-        boolean d;                                                  //задал переменную boolean
+    private static boolean checkOne(int a) {
         if (a >= 0) {                                               //задал условие: если возвращаемые данные >= 0, то false
-            d = false;
-            System.out.println("Возвращено значение false");
+            return true;
         } else {                                                    //в остальных случаях true
-            d = true;
-            System.out.println("Возвращено значение true");
+            return false;
         }
     }
 }

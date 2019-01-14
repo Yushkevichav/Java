@@ -4,7 +4,6 @@ package yushkevich.lesson_1.homework;
 
 public class Part4_var2 {
     public static void main(String[] args) {
-        checkOne();
         if (checkOne() >= 0) {                             //задал условие: если number >= 0, то выводим "Число положительное"
             System.out.println("Число положительное");
         } else {
