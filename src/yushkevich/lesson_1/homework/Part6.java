@@ -4,10 +4,10 @@ package yushkevich.lesson_1.homework;
 
 public class Part6 {
     public static void main(String[] args) {
-        System.out.println("Привет, " + checkOne("Андрей") + "!");                      //вызываю метод checkOne с заданными параметрами
+        System.out.println("Привет, " + checkOne("Андрей") + "!");                      //вызываю метод checkOne с заданными параметрами и выводом на консоль
     }
 
     private static String checkOne(String a) {
-        return a;   //вывожу на консоль
+        return a;
     }
 }
