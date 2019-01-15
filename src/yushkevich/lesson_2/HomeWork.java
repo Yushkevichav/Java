@@ -6,6 +6,7 @@ public class HomeWork {
 
     public static void main(String[] args) {
         System.out.println(Arrays.toString(makeArr1())); //Задание 1
+        System.out.println(Arrays.toString(makeArr2())); //Задание 2
     }
 
     //Задание 1
@@ -14,9 +15,16 @@ public class HomeWork {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == 1) {
                 arr[i] = 0;
-            } else {
-                arr[i] = 1;
-            }
+            } else arr[i] = 1;
+        }
+        return arr;
+    }
+
+    //Задание 2
+    private static int[] makeArr2() {
+        int[] arr = new int[8];
+        for (int i = arr[1]; i < arr.length; i++) {
+            arr[i] = i * 3;
         }
         return arr;
     }
