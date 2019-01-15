@@ -14,7 +14,7 @@ public class HomeWork {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(makeArr1())); //Задание 1
         System.out.println(Arrays.toString(makeArr2())); //Задание 2
-        //System.out.println(Arrays.toString(makeArr3())); //Задание 2
+        //System.out.println(Arrays.toString(makeArr3())); //Задание 3
     }
 
     //Задание 1
