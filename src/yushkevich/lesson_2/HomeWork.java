@@ -2,7 +2,7 @@
  * Java 1. Lesson 2
  *
  * @author Andrey Yushkevich
- * version dated Jan 16, 2019
+ * version dated Jan 17, 2019
  **/
 
 package yushkevich.lesson_2;
