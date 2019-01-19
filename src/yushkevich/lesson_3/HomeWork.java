@@ -5,46 +5,49 @@ import java.util.Random;
 
 public class HomeWork {
 
-    private static Scanner scanner = new Scanner(System.in);                                   //импорт сканера
-    private static Random random = new Random();                                               //импорт рандома
+    private static Scanner scanner = new Scanner(System.in);
+    private static Random random = new Random();
+    private static int range = 9;
 
     public static void main(String[] args) {
-        guessNumb(9);                                                                    //передаю значение 9 в метод
+        guessNumb();
         scanner.close();                                                                        //закрыл сканер при выходе из метода
     }
 
     //задание 1
-    private static void guessNumb(int range) {                                                  //создал метод с входным параметром int
-        boolean bool = false;                                                                   //задал логическую переменную, которая в дальнейшем будет маркером победы
+    private static void guessNumb() {
         int counter = 3;                                                                        //задал счетчик, который в дальнейшем будет счетчиком количества попыток
         int number = random.nextInt(10);                                                 //задал рандомное число от 0 до 9
         while (true) {                                                                          //создал цикл, который выполняется пока условие истина
             counter--;                                                                          //с каждым входом в цикл колиичество попыток -1
-            System.out.println("Угадайте число от 0 до " + range);                              //сообщение, которое берет значение, передаваемое в метод
+            System.out.println("Угадайте число от 0 до " + range);
             int inputnumber = scanner.nextInt();                                                //задал переменную, которая принимает значение из консоли
             if (inputnumber == number) {                                                        //задал условие 1 (введенное число = загаданному)
-                System.out.println("Вы выиграли");                                              //сообщение о победе
-                bool = true;                                                                    //в таком случае bool = true
+                System.out.println("Вы выиграли");
+                wantRepeat();                                                                   //вызов метода, предлагающего сыграть повторно
             } else if (inputnumber < number) {                                                  //задал условие 2 (введенное значение < загаданного)
                 System.out.println("Загаданное число больше. Осталось попыток:  " + counter);   //сообщение, которое сообщает о количестве оставшихся попыток после неправильного ответа
             } else {                                                                            //задал условие 3 (во всех остальных случаях)
                 System.out.println("Загаданное число меньше. Осталось попыток: " + counter);    //сообщение, которое сообщает о количестве оставшихся попыток после неправильного ответа
             }
-            if (counter == 0 || bool == true) {                                                 //задал условие, если значение счетчика = 0 или bool = true, то предлагаем заново войти в цикл или выйти из него
-                System.out.println("Сыграть еще раз? (1 - да, 0 - нет)");                       //предложение сыграть снова
-                int ans = scanner.nextInt();                                                    //задал переменную, которая принимает значение из консоли
-                if (ans == 1) {                                                                 //задал условие, если 1 - то звново входим в цикл
-                    counter = 3;                                                                //сбрасываем значение счетчика на 3
-                    continue;                                                                   //входим заново в цикл
-                } else if (ans == 0) {                                                          //если 0 - выходим из цикла
-                    System.out.println("Всего доброго");                                        //прощание
-                    return;                                                                     //выход из цикла
-                } else {                                                                        //если любое другое значение - выходим из цикла
-                    System.out.println("Ошибка ввода");                                         //сообщение об ошибке
-                    return;                                                                     //выход из цикла
-                }
+            if (counter == 0) {                                                                 //если счетчик = 0, то предлагаем сыграть заново
+                wantRepeat();
             }
         }
     }
 
+    private static void wantRepeat() {
+        System.out.println("Сыграть еще раз? (1 - да, 0 - нет)");
+        int ans = scanner.nextInt();                                                            //задал переменную, которая принимает значение из консоли
+        if (ans == 1) {                                                                         //задал условие, если 1 - то звново входим в цикл
+            guessNumb();                                                                        //входим заново в цикл
+        } else if (ans == 0) {                                                                  //если 0 - выходим из цикла
+            System.out.println("Всего доброго");
+            return;                                                                             //выход из цикла
+        } else {                                                                                //если любое другое значение - выходим из цикла
+            System.out.println("Повторите ввод");
+            guessNumb();                                                                        //входим заново в цикл
+        }
+    }
 }
+
