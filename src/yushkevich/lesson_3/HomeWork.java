@@ -1,3 +1,10 @@
+/**
+ * Java 1. Lesson 3
+ *
+ * @author Andrey Yushkevich
+ * version dated Jan 19, 2019
+ **/
+
 package yushkevich.lesson_3;
 
 import java.util.Scanner;
@@ -24,6 +31,7 @@ public class HomeWork {
             if (inputnumber == number) {                                                        //задал условие 1 (введенное число = загаданному)
                 System.out.println("Вы выиграли");
                 wantRepeat();                                                                   //вызов метода, предлагающего сыграть повторно
+                break;                                                                          //выход из цикла, при выборе выхода в методе wantRepeat
             } else if (inputnumber < number) {                                                  //задал условие 2 (введенное значение < загаданного)
                 System.out.println("Загаданное число больше. Осталось попыток:  " + counter);   //сообщение, которое сообщает о количестве оставшихся попыток после неправильного ответа
             } else {                                                                            //задал условие 3 (во всех остальных случаях)
@@ -42,7 +50,6 @@ public class HomeWork {
             guessNumb();                                                                        //входим заново в цикл
         } else if (ans == 0) {                                                                  //если 0 - выходим из цикла
             System.out.println("Всего доброго");
-            return;                                                                             //выход из цикла
         } else {                                                                                //если любое другое значение - выходим из цикла
             System.out.println("Повторите ввод");
             wantRepeat();                                                                       //входим заново в цикл
