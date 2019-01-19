@@ -10,9 +10,11 @@ public class HomeWork {
 
     public static void main(String[] args) {
         guessNumb(9);
+        scanner.close();
     }
 
     private static void guessNumb(int range) {
+        int counter = 3;
         int number = random.nextInt(10);
         while (true) {
             System.out.println("Угадайте число от 0 до " + range);
@@ -25,17 +27,25 @@ public class HomeWork {
                     continue;
                 } else if (ans == 0) {
                     System.out.println("Досвидания");
-                    scanner.close();
                     return;
                 } else {
                     System.out.println("Ошибка ввода");
-                    scanner.close();
                     return;
                 }
-            } else if (inputnumber < number) {
-                System.out.println("Загаданное число больше");
+            }
+            counter--;
+            if (inputnumber < number) {
+                System.out.println("Загаданное число больше. Осталось попыток:  " + counter);
+                if (counter == 0) {
+                    System.out.println("Вы проиграли");
+                    return;
+                }
             } else {
-                System.out.println("Загаданное число меньше");
+                System.out.println("Загаданное число меньше. Осталось попыток: " + counter);
+                if (counter == 0) {
+                    System.out.println("Вы проиграли");
+                    return;
+                }
             }
         }
     }
