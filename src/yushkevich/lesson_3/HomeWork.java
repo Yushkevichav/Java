@@ -24,7 +24,7 @@ public class HomeWork {
     //задание 1
     private static void guessNumb() {
         int counter = 3;                                                                        //задал счетчик, который в дальнейшем будет счетчиком количества попыток
-        int number = random.nextInt(range + 1);                                                 //задал рандомное число от 0 до 9
+        int number = random.nextInt(range + 1);                                          //задал рандомное число от 0 до 9
         while (true) {                                                                          //создал цикл, который выполняется пока условие истина
             counter--;                                                                          //с каждым входом в цикл колиичество попыток -1
             System.out.println("Угадайте число от 0 до " + range);
