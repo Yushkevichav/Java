@@ -14,6 +14,7 @@ public class HomeWork {
 
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
+    private static int range = 9;                                                               //задал переменную, которую можно использовать в рандом + объявлении игры
 
     public static void main(String[] args) {
         guessNumb();
@@ -23,10 +24,10 @@ public class HomeWork {
     //задание 1
     private static void guessNumb() {
         int counter = 3;                                                                        //задал счетчик, который в дальнейшем будет счетчиком количества попыток
-        int number = random.nextInt(10);                                                 //задал рандомное число от 0 до 9
+        int number = random.nextInt(range + 1);                                                 //задал рандомное число от 0 до 9
         while (true) {                                                                          //создал цикл, который выполняется пока условие истина
             counter--;                                                                          //с каждым входом в цикл колиичество попыток -1
-            System.out.println("Угадайте число от 0 до 9");
+            System.out.println("Угадайте число от 0 до " + range);
             int inputnumber = scanner.nextInt();                                                //задал переменную, которая принимает значение из консоли
             if (inputnumber == number) {                                                        //задал условие 1 (введенное число = загаданному)
                 System.out.println("Вы выиграли");
