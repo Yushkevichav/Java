@@ -8,7 +8,9 @@ public class Worker {
     private double salary;
     private int age;
 
+
     public static void main(String[] args) {
+        description();
     }
 
     private Worker(String name, String position, String email, String phone, double salary, int age) {
@@ -29,6 +31,11 @@ public class Worker {
         workersArr[4] = new Worker("Test5", "Test5", "Test5", "89991112235", 50500.50, 63);
 
         for (int i = 0; i < workersArr.length; i++) {
+            if (workersArr[i].age > 40) {
+                System.out.println(workersArr[i].name + " " + workersArr[i].position + " " + workersArr[i].email + " " + workersArr[i].phone + " " + workersArr[i].salary + " " + workersArr[i].age);
+            }else {
+                System.out.println("Резултаты отсутствуют");
+            }
         }
     }
 }
