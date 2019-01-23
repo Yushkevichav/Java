@@ -7,10 +7,10 @@
 
 package yushkevich.lesson_5;
 
-public class HomeWork {
+public class Main {
 
     public static void main(String[] args) {
-        new HomeWork().description();
+        new Main().description();
     }
 
     void description() {
