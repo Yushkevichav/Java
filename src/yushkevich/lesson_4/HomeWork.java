@@ -81,17 +81,28 @@ class HomeWork {
     }
 
     boolean checkWin(char dt) {
-        // check horizontal
-        if (map[0][0] == dt && map[1][0] == dt && map[2][0] == dt) return true;
-        if (map[0][1] == dt && map[1][1] == dt && map[2][1] == dt) return true;
-        if (map[0][2] == dt && map[1][2] == dt && map[2][2] == dt) return true;
-        // check vertical
-        if (map[0][0] == dt && map[0][1] == dt && map[0][2] == dt) return true;
-        if (map[1][0] == dt && map[1][1] == dt && map[1][2] == dt) return true;
-        if (map[2][0] == dt && map[2][1] == dt && map[2][2] == dt) return true;
-        // check diagonal
-        if (map[0][0] == dt && map[1][1] == dt && map[2][2] == dt) return true;
-        if (map[2][0] == dt && map[1][1] == dt && map[0][2] == dt) return true;
+        boolean diag1 = true;
+        boolean diag2 = true;
+        for (int i = 0; i < map.length; i++) {
+            boolean all_row_dt = true;
+            boolean all_col_dt = true;
+            if (map[i][i] != dt) {
+                diag1 = false;
+            }
+            if (map[i][map.length - 1 - i] != dt) {
+                diag2 = false;
+            }
+            for (int g = 0; g < map.length; g++) {
+                if (map[i][g] != dt) {
+                    all_row_dt = false;
+                }
+                if (map[g][i] != dt) {
+                    all_col_dt = false;
+                }
+            }
+            if (all_row_dt || all_col_dt) return true;
+        }
+        if (diag1 || diag2) return true;
         return false;
     }
 
