@@ -1,3 +1,10 @@
+/**
+ * Java 1. Lesson 4
+ *
+ * @author Andrey Yushkevich
+ * version dated Jan 24, 2019
+ **/
+
 package yushkevich.lesson_4;
 
 import java.util.Random;
@@ -81,29 +88,35 @@ class HomeWork {
     }
 
     boolean checkWin(char dt) {
-        boolean diag1 = true;
-        boolean diag2 = true;
-        for (int i = 0; i < map.length; i++) {
-            boolean all_row_dt = true;
-            boolean all_col_dt = true;
-            if (map[i][i] != dt) {
+        boolean diag1 = true;                               //задал будеву переменную, которая будет использоваться для проверки основной диагонали
+        boolean diag2 = true;                               //задал будеву переменную, которая будет использоваться для проверки побочной диагонали
+        for (int i = 0; i < map.length; i++) {              //зачал счетчик первого массива
+            boolean all_row_dt = true;                      //задал будеву переменную, которая будет использоваться для проверки всех строк
+            boolean all_col_dt = true;                      //задал будеву переменную, которая будет использоваться для проверки всех строк
+            if (map[i][i] != dt) {                          /* цикл на проверку основной диагонали (проверка diag1 вынесена за цикл,
+                                                              т.к. если оставить ее в цикле - то при вводе любого значения будет возвращаться true).
+                                                              Если индекс массива != dt, то присваиваем diag1 = false
+                                                            */
                 diag1 = false;
             }
-            if (map[i][map.length - 1 - i] != dt) {
+            if (map[i][map.length - 1 - i] != dt) {         /* цикл на проверку побочной диагонали (проверка diag2 вынесена за цикл,
+                                                              т.к. если оставить ее в цикле - то при вводе любого значения будет возвращаться true).
+                                                              Если индекс массива != dt, то присваиваем diag2 = false
+                                                            */
                 diag2 = false;
             }
-            for (int g = 0; g < map.length; g++) {
-                if (map[i][g] != dt) {
-                    all_row_dt = false;
+            for (int g = 0; g < map.length; g++) {          //задал счетчик второго массива
+                if (map[i][g] != dt) {                      //проходимся по строке
+                    all_row_dt = false;                     //если хотя бы 1 значение в строке != dt - возвращаем false
                 }
-                if (map[g][i] != dt) {
-                    all_col_dt = false;
+                if (map[g][i] != dt) {                      //проходимся по столбцу
+                    all_col_dt = false;                     //если хотя бы 1 значение в столбце != dt - возвращаем false
                 }
             }
-            if (all_row_dt || all_col_dt) return true;
+            if (all_row_dt || all_col_dt) return true;      //если all_row_dt или all_col_dt = true - возвращаем true
         }
-        if (diag1 || diag2) return true;
-        return false;
+        if (diag1 || diag2) return true;                    //если diag1 или diag2 = true - возвращаем true
+        return false;                                       //во всех остальных случаях возвращаем false
     }
 
     boolean isMapFull() {
