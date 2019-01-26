@@ -2,7 +2,7 @@
  * Java 1. Lesson 5
  *
  * @author Andrey Yushkevich
- * version dated Jan 22, 2019
+ * version dated Jan 26, 2019
  **/
 
 package yushkevich.lesson_5;
@@ -22,13 +22,8 @@ public class Main {
         workersArr[4] = new Worker("Test5", "Test5", "Test5", "89991112235", 50500.50, 63);
 
         for (int i = 0; i < workersArr.length; i++) {
-            if (workersArr[i].age > 40) {
-                System.out.println("ФИО: " + workersArr[i].name + ", "
-                        + "Должность: " + workersArr[i].position + ", "
-                        + "Почта: " + workersArr[i].email + ", "
-                        + "Телефон: " + workersArr[i].phone + ", "
-                        + "ЗП: " + workersArr[i].salary + ", "
-                        + "Возраст: " + workersArr[i].age);
+            if (workersArr[i].getAge() > 40) {
+                System.out.println(workersArr[i]);
             }
         }
     }
