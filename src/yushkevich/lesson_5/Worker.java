@@ -77,7 +77,7 @@ public class Worker {
     }
 
     private void setAge(int age) {
-        if (age <= 14) {
+        if (age < 14) {
             System.out.printf("Ты используешь детский труд!");
         } else {
             this.age = age;
