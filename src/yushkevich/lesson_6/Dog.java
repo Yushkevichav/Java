@@ -1,25 +1,22 @@
 package yushkevich.lesson_6;
 
-public abstract class Dog extends Animal {
+public class Dog extends Animal {
 
     public Dog() {
         run();
-        sweem();
+        swim();
         jump();
     }
 
     @Override
     public void run() {
-
     }
 
     @Override
-    public void sweem() {
-
+    public void swim() {
     }
 
     @Override
     public void jump() {
-
     }
 }

@@ -4,12 +4,14 @@ public abstract class Animal {
 
     public Animal() {
         run();
-        sweem();
+        swim();
         jump();
     }
 
     public abstract void run();
-    public abstract void sweem();
+
+    public abstract void swim();
+
     public abstract void jump();
 
 }
