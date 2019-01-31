@@ -3,12 +3,15 @@ package yushkevich.lesson_6;
 public class Main {
 
     Cat cat = new Cat();
+    Dog dog = new Dog();
 
     public static void main(String[] args) {
-        new Main().runCat(200);
+        new Main().runCat(250);
         new Main().swimCat(1);
-        new Main().jumpCat(200);
-
+        new Main().jumpCat(5);
+        new Main().runDog(550);
+        new Main().swimDog(15);
+        new Main().jumpDog(5);
     }
 
     void runCat(int a) {
@@ -37,6 +40,33 @@ public class Main {
         } else {
             cat.factJump = a;
             cat.jump();
+        }
+    }
+
+    void runDog(int a) {
+        if (a < 0) {
+            System.out.println("Ошибка");
+        } else {
+            dog.factRun = a;
+            dog.run();
+        }
+    }
+
+    void swimDog(int a) {
+        if (a < 0) {
+            System.out.println("Ошибка");
+        } else {
+            dog.factSwim = a;
+            dog.swim();
+        }
+    }
+
+    void jumpDog(int a) {
+        if (a < 0) {
+            System.out.println("Ошибка");
+        } else {
+            dog.factJump = a;
+            dog.jump();
         }
     }
 }
