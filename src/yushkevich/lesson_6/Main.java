@@ -1,20 +1,27 @@
+/**
+ * Java 1. Lesson 6
+ *
+ * @author Andrey Yushkevich
+ * version dated Jan 31, 2019
+ **/
+
 package yushkevich.lesson_6;
 
 public class Main {
 
-    Cat cat = new Cat();
-    Dog dog = new Dog();
+    Cat cat = new Cat();                        //новый объект Кот
+    Dog dog = new Dog();                        //новый объект Собака
 
     public static void main(String[] args) {
-        new Main().runCat(250);
-        new Main().swimCat(1);
-        new Main().jumpCat(5);
-        new Main().runDog(550);
-        new Main().swimDog(15);
-        new Main().jumpDog(5);
+        new Main().runCat(250);              //заставить кота бегать с задаными параметрами
+        new Main().swimCat(1);               //заставить кота плавать с задаными параметрами
+        new Main().jumpCat(5);               //заставить кота прыгать с задаными параметрами
+        new Main().runDog(550);              //заставить собаку бегать с задаными параметрами
+        new Main().swimDog(15);              //заставить собаку плавать с задаными параметрами
+        new Main().jumpDog(5);               //заставить собаку прыгать с задаными параметрами
     }
 
-    void runCat(int a) {
+    void runCat(int a) {                        //вызов бега кота
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
@@ -23,7 +30,7 @@ public class Main {
         }
     }
 
-    void swimCat(int a) {
+    void swimCat(int a) {                       //вызов плавания кота
         boolean check = false;
         if (a == 0) {
             check = true;
@@ -34,7 +41,7 @@ public class Main {
         cat.swim();
     }
 
-    void jumpCat(int a) {
+    void jumpCat(int a) {                       //вызов прыжка кота
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
@@ -43,7 +50,7 @@ public class Main {
         }
     }
 
-    void runDog(int a) {
+    void runDog(int a) {                        //вызов бега собаки
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
@@ -52,7 +59,7 @@ public class Main {
         }
     }
 
-    void swimDog(int a) {
+    void swimDog(int a) {                       //вызов плавания собаки
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
@@ -61,7 +68,7 @@ public class Main {
         }
     }
 
-    void jumpDog(int a) {
+    void jumpDog(int a) {                       //вызов прыжка собаки
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
