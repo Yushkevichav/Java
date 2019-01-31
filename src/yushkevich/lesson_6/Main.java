@@ -31,7 +31,7 @@ public class Main {
     }
 
     void swimCat(int a) {                       //вызов плавания кота
-        boolean check = false;
+        boolean check;
         if (a == 0) {
             check = true;
         } else {
