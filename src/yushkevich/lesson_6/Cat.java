@@ -14,21 +14,23 @@ public class Cat extends Animal {
         if (factRun > maxRun) {
             System.out.println("Коты не могут так бегать");
         } else {
-            System.out.println("Кот пробежал метров: " + factRun);
+            System.out.println("Кот пробежал(м): " + factRun);
         }
     }
 
     @Override
     public void swim() {
-        if (factSwim = maxSwim) {
+        if (factSwim == maxSwim) {
             System.out.println("Этот кот не умеет плавать");
+        } else {
+            System.out.println("Очень странный кот");
         }
     }
 
     @Override
     public void jump() {
         if (factJump > maxJump) {
-            System.out.println("Коты не умеют так првгать");
+            System.out.println("Коты не умеют так прыгать");
         } else {
             System.out.println("Кот подпрыгнул на высоту(м):" + factJump);
         }
