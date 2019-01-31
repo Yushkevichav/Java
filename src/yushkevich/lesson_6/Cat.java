@@ -59,4 +59,10 @@ public class Cat extends Animal {
             System.out.println("Кот прыгнул");
         }
     }
+
+    public Cat () {
+        this.factRun = factRun;
+        this.factSwim = factSwim;
+        this.factJump = factJump;
+    }
 }
