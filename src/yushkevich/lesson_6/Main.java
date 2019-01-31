@@ -32,7 +32,7 @@ public class Main {
 
     void swimCat(int a) {                       //вызов плавания кота
         boolean check;
-        if (a == 0) {
+        if (a >= 0) {
             check = true;
         } else {
             check = false;
