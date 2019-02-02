@@ -9,12 +9,12 @@ package yushkevich.lesson_6;
 
 public class Dog extends Animal {
 
-    private final int maxRun = 500;                                           //неизменяемая переменная = максимальная длина забега
-    private int factRun;                                                      //фактическая длина бега
-    private final int maxSwim = 10;                                           //неизменяемая переменная = максимальная длина заплыва
-    private int factSwim;                                                     //фактическая длина заплыва
-    private final double maxJump = 0.5;                                       //неизменяемая переменная = максимальная высота прыжка
-    private double factJump;                                                  //фактическая высота прыжка
+    private final int maxRun = 500;                                             //неизменяемая переменная = максимальная длина забега
+    private int factRun;                                                        //фактическая длина бега
+    private final int maxSwim = 10;                                             //неизменяемая переменная = максимальная длина заплыва
+    private int factSwim;                                                       //фактическая длина заплыва
+    private final double maxJump = 0.5;                                         //неизменяемая переменная = максимальная высота прыжка
+    private double factJump;                                                    //фактическая высота прыжка
 
     public void setFactRun(int factRun){
         this.factRun = factRun;
