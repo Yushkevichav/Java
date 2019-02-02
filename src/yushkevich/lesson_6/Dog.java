@@ -16,27 +16,27 @@ public class Dog extends Animal {
     private final double maxJump = 0.5;                                         //неизменяемая переменная = максимальная высота прыжка
     private double factJump;                                                    //фактическая высота прыжка
 
-    public void setFactRun(int factRun){
+    public void setFactRun(int factRun) {
         this.factRun = factRun;
     }
 
-    public int getFactRun(){
+    public int getFactRun() {
         return factRun;
     }
 
-    public void setFactSwim(int factSwim){
+    public void setFactSwim(int factSwim) {
         this.factSwim = factSwim;
     }
 
-    public int getFactSwim(){
+    public int getFactSwim() {
         return factSwim;
     }
 
-    public void setFactJump(double factJump){
+    public void setFactJump(double factJump) {
         this.factJump = factJump;
     }
 
-    public double getFactJump(){
+    public double getFactJump() {
         return factJump;
     }
 

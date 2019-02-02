@@ -16,27 +16,27 @@ public class Cat extends Animal {
     private final int maxJump = 2;                                            //неизменяемая переменная = максимальная высота прыжка
     private int factJump;                                                     //фактическая высота прыжка
 
-    public void setFactRun(int factRun){
+    public void setFactRun(int factRun) {
         this.factRun = factRun;
     }
 
-    public int getFactRun(){
+    public int getFactRun() {
         return factRun;
     }
 
-    public void setFactSwim(boolean factSwim){
+    public void setFactSwim(boolean factSwim) {
         this.factSwim = factSwim;
     }
 
-    public boolean getFactSwim(){
+    public boolean getFactSwim() {
         return factSwim;
     }
 
-    public void setFactJump(int factJump){
+    public void setFactJump(int factJump) {
         this.factJump = factJump;
     }
 
-    public int getFactJump(){
+    public int getFactJump() {
         return factJump;
     }
 
