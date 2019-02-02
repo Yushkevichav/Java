@@ -13,19 +13,19 @@ public class Main {
     Dog dog = new Dog();                        //новый объект Собака
 
     public static void main(String[] args) {
-        new Main().runCat(250);              //заставить кота бегать с задаными параметрами
+        new Main().runCat(200);              //заставить кота бегать с задаными параметрами
         new Main().swimCat(1);               //заставить кота плавать с задаными параметрами
-        new Main().jumpCat(5);               //заставить кота прыгать с задаными параметрами
-        new Main().runDog(550);              //заставить собаку бегать с задаными параметрами
-        new Main().swimDog(15);              //заставить собаку плавать с задаными параметрами
-        new Main().jumpDog(5);               //заставить собаку прыгать с задаными параметрами
+        new Main().jumpCat(1);               //заставить кота прыгать с задаными параметрами
+        new Main().runDog(350);              //заставить собаку бегать с задаными параметрами
+        new Main().swimDog(5);              //заставить собаку плавать с задаными параметрами
+        new Main().jumpDog(0.1);               //заставить собаку прыгать с задаными параметрами
     }
 
     void runCat(int a) {                        //вызов бега кота
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
-            cat.factRun = a;
+            cat.setFactRun(a);
             cat.run();
         }
     }
@@ -37,7 +37,7 @@ public class Main {
         } else {
             check = false;
         }
-        cat.factSwim = check;
+        cat.setFactSwim(check);
         cat.swim();
     }
 
@@ -45,7 +45,7 @@ public class Main {
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
-            cat.factJump = a;
+            cat.setFactJump(a);
             cat.jump();
         }
     }
@@ -54,7 +54,7 @@ public class Main {
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
-            dog.factRun = a;
+            dog.setFactRun(a);
             dog.run();
         }
     }
@@ -63,16 +63,16 @@ public class Main {
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
-            dog.factSwim = a;
+            dog.setFactSwim(a);
             dog.swim();
         }
     }
 
-    void jumpDog(int a) {                       //вызов прыжка собаки
+    void jumpDog(double a) {                       //вызов прыжка собаки
         if (a < 0) {
             System.out.println("Ошибка");
         } else {
-            dog.factJump = a;
+            dog.setFactJump(a);
             dog.jump();
         }
     }

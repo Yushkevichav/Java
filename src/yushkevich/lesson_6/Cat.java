@@ -9,12 +9,36 @@ package yushkevich.lesson_6;
 
 public class Cat extends Animal {
 
-    protected final int maxRun = 200;                                           //неизменяемая переменная = максимальная длина забега
-    protected int factRun;                                                      //фактическая длина бега
-    protected final boolean maxSwim = true;                                     //неизменяемая булева переменная, т.к. наш кот не умеет плавать - выболняет роль чекера заплыва
-    protected boolean factSwim;                                                 //фактическая длина заплыва
-    protected final int maxJump = 2;                                            //неизменяемая переменная = максимальная высота прыжка
-    protected int factJump;                                                     //фактическая высота прыжка
+    private final int maxRun = 200;                                           //неизменяемая переменная = максимальная длина забега
+    private int factRun;                                                      //фактическая длина бега
+    private final boolean maxSwim = true;                                     //неизменяемая булева переменная, т.к. наш кот не умеет плавать - выболняет роль чекера заплыва
+    private boolean factSwim;                                                 //фактическая длина заплыва
+    private final int maxJump = 2;                                            //неизменяемая переменная = максимальная высота прыжка
+    private int factJump;                                                     //фактическая высота прыжка
+
+    public void setFactRun(int factRun){
+        this.factRun = factRun;
+    }
+
+    public int getFactRun(){
+        return factRun;
+    }
+
+    public void setFactSwim(boolean factSwim){
+        this.factSwim = factSwim;
+    }
+
+    public boolean getFactSwim(){
+        return factSwim;
+    }
+
+    public void setFactJump(int factJump){
+        this.factJump = factJump;
+    }
+
+    public int getFactJump(){
+        return factJump;
+    }
 
     @Override
     public void run() {                                                         //переопределенный метод, проверяет бег

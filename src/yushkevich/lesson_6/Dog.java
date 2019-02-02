@@ -9,12 +9,36 @@ package yushkevich.lesson_6;
 
 public class Dog extends Animal {
 
-    protected final int maxRun = 500;                                           //неизменяемая переменная = максимальная длина забега
-    protected int factRun;                                                      //фактическая длина бега
-    protected final int maxSwim = 10;                                           //неизменяемая переменная = максимальная длина заплыва
-    protected int factSwim;                                                     //фактическая длина заплыва
-    protected final double maxJump = 0.5;                                       //неизменяемая переменная = максимальная высота прыжка
-    protected double factJump;                                                  //фактическая высота прыжка
+    private final int maxRun = 500;                                           //неизменяемая переменная = максимальная длина забега
+    private int factRun;                                                      //фактическая длина бега
+    private final int maxSwim = 10;                                           //неизменяемая переменная = максимальная длина заплыва
+    private int factSwim;                                                     //фактическая длина заплыва
+    private final double maxJump = 0.5;                                       //неизменяемая переменная = максимальная высота прыжка
+    private double factJump;                                                  //фактическая высота прыжка
+
+    public void setFactRun(int factRun){
+        this.factRun = factRun;
+    }
+
+    public int getFactRun(){
+        return factRun;
+    }
+
+    public void setFactSwim(int factSwim){
+        this.factSwim = factSwim;
+    }
+
+    public int getFactSwim(){
+        return factSwim;
+    }
+
+    public void setFactJump(double factJump){
+        this.factJump = factJump;
+    }
+
+    public double getFactJump(){
+        return factJump;
+    }
 
     @Override
     public void run() {                                                         //переопределенный метод, проверяет бег
@@ -30,7 +54,7 @@ public class Dog extends Animal {
         if (factSwim > maxSwim) {                                               //если фактическая длина заплыва > максимальной
             System.out.println("Собаки столько не плавают");
         } else {                                                                //в остальных случаях
-            System.out.println("Собака проплыла: " + factSwim);
+            System.out.println("Собака проплыла(м): " + factSwim);
         }
     }
 
