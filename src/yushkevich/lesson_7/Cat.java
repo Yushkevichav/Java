@@ -1,10 +1,17 @@
+/**
+ * Java 1. Lesson 7
+ *
+ * @author Andrey Yushkevich
+ * version dated Feb 03, 2019
+ **/
+
 package yushkevich.lesson_7;
 
 import java.util.Random;
 
 class Cat {
     protected String name;                                  //имя кота
-    protected int appetite = appetiteRandom(1, 10);           //рандом аппетит для каждого кота (от 1 до 10)
+    protected int appetite = appetiteRandom(1, 10);         //рандом аппетит для каждого кота (от 1 до 10)
     protected boolean satiety = false;                      //сытость
 
     private int appetiteRandom(int min, int max) {          //метод для генерации аппетита кота

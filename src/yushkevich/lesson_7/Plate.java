@@ -1,3 +1,10 @@
+/**
+ * Java 1. Lesson 7
+ *
+ * @author Andrey Yushkevich
+ * version dated Feb 03, 2019
+ **/
+
 package yushkevich.lesson_7;
 
 class Plate {
@@ -16,7 +23,7 @@ class Plate {
         return "Food: " + food;
     }
 
-    public int addFood() {         //добавляем 20 еды, если в тарелке закончилась еда
+    public int addFood() {         //добавляем еды, если в тарелке она закончилась
         return food += 10;
     }
 }

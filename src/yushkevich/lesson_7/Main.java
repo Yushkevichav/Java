@@ -1,11 +1,14 @@
+/**
+ * Java 1. Lesson 7
+ *
+ * @author Andrey Yushkevich
+ * version dated Feb 03, 2019
+ **/
+
 package yushkevich.lesson_7;
 
 class Main {
     public static void main(String[] args) {
-        new Main().masCat();
-    }
-
-    void masCat() {
         Plate plate = new Plate(10);
         Cat catArr[] = new Cat[5];
         catArr[0] = new Cat("Антоний");
