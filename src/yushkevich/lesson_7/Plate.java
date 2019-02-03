@@ -1,7 +1,7 @@
 package yushkevich.lesson_7;
 
 class Plate {
-    private int food;
+    protected int food;
 
     Plate(int food) {
         this.food = food;
