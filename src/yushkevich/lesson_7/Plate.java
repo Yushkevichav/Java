@@ -15,4 +15,8 @@ class Plate {
     public String toString() {
         return "Food: " + food;
     }
+
+    public int addFood() {         //добавляем 20 еды, если в тарелке закончилась еда
+        return food += 10;
+    }
 }
