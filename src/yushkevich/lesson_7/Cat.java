@@ -24,12 +24,14 @@ class Cat {
     }
 
     void eat(Plate plate) {                                 //метод, заставляющий кота есть
-        plate.dicreaseFood(appetite);                       //в остальных случаях кот ест
-        satiety = true;                                     //после еды сытость = true
-        checkSatiety();
+        if (satiety == true) return;
+        else {
+            plate.dicreaseFood(appetite);                       //в остальных случаях кот ест
+            satiety = true;                                     //после еды сытость = true
+        }
     }
 
-    void checkSatiety () {
+    void checkSatiety() {
         if (satiety == true) return;
     }
 }
