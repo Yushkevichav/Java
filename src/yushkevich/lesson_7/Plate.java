@@ -12,10 +12,15 @@ class Plate {
 
     Plate(int food) {
         this.food = food;
+        if (food <= 0) addFood();
     }
 
-    void dicreaseFood(int food) {
-        this.food -= food;
+    void dicreaseFood(int _food) {
+        this.food -= _food;
+        if (food <= 0) {
+            System.out.println("Кот не поел, добавим еды в тарелку");
+            addFood();
+        }
     }
 
     @Override
