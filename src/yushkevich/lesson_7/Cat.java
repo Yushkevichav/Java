@@ -30,8 +30,4 @@ class Cat {
             satiety = true;                                     //после еды сытость = true
         }
     }
-
-    void checkSatiety() {
-        if (satiety == true) return;
-    }
 }
