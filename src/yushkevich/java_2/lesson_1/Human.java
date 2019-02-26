@@ -2,20 +2,22 @@ package yushkevich.java_2.lesson_1;
 
 public class Human implements Swim, Jump, Run {
 
-    private int canSwimDistance;
-    private int jumpHeight;
-    private int canRunDistance;
-    private boolean onDistance = true;
+    protected int canSwimDistance;
+    protected int jumpHeight;
+    protected int canRunDistance;
+    protected boolean onDistance = true;
+    protected String name;
 
     public boolean setOnDistance(boolean onDistance) {
         this.onDistance = onDistance;
         return onDistance;
     }
 
-    public Human(int canSwimDistance, int jumpHeight, int canRunDistance) {
+    public Human(int canSwimDistance, int jumpHeight, int canRunDistance, String name) {
         this.canSwimDistance = canSwimDistance;
         this.jumpHeight = jumpHeight;
         this.canRunDistance = canRunDistance;
+        this.name = name;
     }
 
 
