@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_1.Work;
+package yushkevich.java_2.lesson_1;
 
 public class Wall extends Obstacle {
     public Wall(int size) {

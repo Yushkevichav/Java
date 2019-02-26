@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_1.Work;
+package yushkevich.java_2.lesson_1;
 
 public class Dog extends Animal implements Swim, Jump, Run {
     private final int canSwimDistance;

@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_1.Work;
+package yushkevich.java_2.lesson_1;
 
 public class Duck extends Animal implements Swim {
     int canSwimDistance;
