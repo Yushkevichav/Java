@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_1;
+package yushkevich.java_2.lesson_1.Work;
 
 public class Cat extends Animal implements Jump {
     private int jumpHeight;
