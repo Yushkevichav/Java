@@ -1,6 +1,6 @@
 package yushkevich.java_2.lesson_1;
 
-public class Dog extends Animal implements Swimable, Jump, Run {
+public class Dog extends Animal implements Swim, Jump, Run {
     private final int canSwimDistance;
     private int jumpHeight;
 

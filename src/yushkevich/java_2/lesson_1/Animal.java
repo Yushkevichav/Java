@@ -5,16 +5,18 @@ public class Animal implements Run {
     protected String name;
     private int canRunDistance;
 
+    private boolean onDistance = true;
+
     public boolean isOnDistance() {
         return onDistance;
     }
+
 
     public Animal setOnDistance(boolean onDistance) {
         this.onDistance = onDistance;
         return this;
     }
 
-    private boolean onDistance = true;
 
     public Animal(int canRunDistance, String name) {
         this.canRunDistance = canRunDistance;
@@ -32,7 +34,6 @@ public class Animal implements Run {
     public String getName() {
         return name;
     }
-
 
 
 }

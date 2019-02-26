@@ -7,8 +7,8 @@ public class Water extends Obstacle {
 
     @Override
     public void doIt(Animal a) {
-        if (a instanceof Swimable) {
-            ((Swimable) a).swim(size);
+        if (a instanceof Swim) {
+            ((Swim) a).swim(size);
         } else {
             a.setOnDistance(false);
         }
