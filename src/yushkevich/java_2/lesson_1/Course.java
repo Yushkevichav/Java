@@ -9,5 +9,7 @@ public class Course {
     }
 
     public void doIt(Team s) {
+        for (Obstacle ob : obstacles);
     }
 }
+

@@ -16,11 +16,12 @@ public class Team {
 
     public void showResults(Team team) {
         for (Animal al2 : animals) {
-            System.out.println(al2.getName() + " on distance " + al2.isOnDistance());
+            System.out.println(al2.getName() + " on distance: " + al2.isOnDistance());
         }
     }
 
     public void showTeam() {
+        System.out.println("Название команды: " + name);
         for (Animal al3 : animals) {
             System.out.println("Участник: " + al3.name);
         }
