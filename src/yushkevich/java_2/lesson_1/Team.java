@@ -8,9 +8,9 @@ public class Team {
     public Team(String name) {
         this.name = name;
         animals = new Animal[]{
-                new Cat(1, 1),
-                new Dog(1, 1, 1),
-                new Duck(1, 1),
+                new Cat(100, 100),
+                new Dog(100, 100, 100),
+                new Duck(100, 100),
         };
     }
 
