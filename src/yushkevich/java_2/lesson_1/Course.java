@@ -9,6 +9,11 @@ public class Course {
     }
 
     public void doIt(Team s) {
+        for (Obstacle ob : obstacles) {
+            for (Animal al2 : s.animals) {
+                ob.doIt(al2);
+            }
+        }
     }
 }
 
