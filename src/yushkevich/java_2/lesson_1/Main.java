@@ -1,3 +1,10 @@
+/**
+ * Java 2. Lesson 1
+ *
+ * @author Andrey Yushkevich
+ * version dated Feb 27, 2019
+ */
+
 package yushkevich.java_2.lesson_1;
 
 public class Main {
