@@ -10,10 +10,10 @@ package yushkevich.java_2.lesson_1;
 public class Main {
     public static void main(String[] args) {
         Course course = new Course();
-        Team team = new Team("Efd");
-        course.doIt(team);
-        team.showTeam();
+        Team team = new Team("Dream team");
+        course.doIt(team);  //заставить команду пройти полосу препятствий
+        team.showTeam();    //показать информацию о команде
         System.out.println("---------------");
-        team.showResults(team);
+        team.showResults(team); //показать результаты прохождения
     }
 }
