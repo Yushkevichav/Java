@@ -8,6 +8,10 @@ public class Road extends Obstacle {
 
     @Override
     public void doIt(Animal a) {
-        a.run(size);
+        if (a instanceof Run) {
+            ((Run) a).run(size);
+        } else {
+            a.setOnDistance(false);
+        }
     }
 }
