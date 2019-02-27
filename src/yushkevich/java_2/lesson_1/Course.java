@@ -5,6 +5,6 @@ public class Course {
         Obstacle[] obstacles = {new Road(8), new Water(3), new Wall(3)};
     }
 
-    public void doIt(Team t){
+    public void doIt(Team s){
     }
 }

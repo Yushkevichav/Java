@@ -21,6 +21,12 @@ public class Main {
             System.out.println(al2.getName() + " on distance " + al2.isOnDistance());
         }
 
+//        Course course = new Course();
+//        Team team = new Team("Efd");
+//        course.doIt(team);
+//        team.showResults(team);
+//        System.out.println("---------------");
+//        team.showTeam();
     }
 
 }

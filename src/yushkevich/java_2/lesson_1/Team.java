@@ -5,24 +5,24 @@ public class Team {
 
     Animal[] animals;
 
-    public Team(String name){
+    public Team(String name) {
         this.name = name;
         animals = new Animal[]{
-                new Cat(5, 3),
-                new Dog(5, 10, 2),
-                new Duck(3, 10),
-                new Duck(4, 8)
+                new Cat(1, 1),
+                new Dog(1, 1, 1),
+                new Duck(1, 1),
         };
     }
 
-    public void showResults(){
-        System.out.println();
+    public void showResults(Team team) {
+        for (Animal al2 : animals) {
+            System.out.println(al2.getName() + " on distance " + al2.isOnDistance());
+        }
     }
 
-    public void showResultsTeam(){
-        System.out.println("Первый участник: " + animals[0].name);
-        System.out.println("Первый участник: " + animals[1].name);
-        System.out.println("Первый участник: " + animals[2].name);
-        System.out.println("Первый участник: " + animals[3].name);
+    public void showTeam() {
+        for (Animal al3 : animals) {
+            System.out.println("Участник: " + al3.name);
+        }
     }
 }
