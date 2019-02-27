@@ -3,7 +3,7 @@ package yushkevich.java_2.lesson_1;
 public class Team {
     protected String name;
 
-    Animal[] animals;
+    protected Animal[] animals;
 
     public Team(String name) {
         this.name = name;
