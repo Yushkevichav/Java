@@ -9,7 +9,7 @@ package yushkevich.java_2.lesson_1;
 
 public class Main {
     public static void main(String[] args) {
-        Course course = new Course();
+        Course course = new Course(new Obstacle[]{new Road(4), new Wall(4), new Water(4)});
         Team team = new Team("Dream team");
         course.doIt(team);  //заставить команду пройти полосу препятствий
         team.showTeam();    //показать информацию о команде

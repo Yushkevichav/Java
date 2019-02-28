@@ -11,9 +11,10 @@ public class Course {
 
     protected Obstacle[] obstacles; //создан массив препятствий
 
-    public Course() {
-        obstacles = new Obstacle[]{new Road(8), new Water(3), new Wall(3)}; //массив проинициализирован препятствиями
+    public Course(Obstacle[] obstacles) {
+        this.obstacles = obstacles; //массив передан в конструктор
     }
+
 
     public void doIt(Team s) {  //метод, заставляющий команду проходить полосу препятствий
         for (Obstacle ob : obstacles) {
