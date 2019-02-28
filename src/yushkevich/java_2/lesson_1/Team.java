@@ -13,13 +13,9 @@ public class Team {
 
     protected Animal[] animals; //создан новый массив животных-участников
 
-    public Team(String name) {
+    public Team(String name, Animal[] animals) {
         this.name = name;
-        animals = new Animal[]{ //массив проинициализирован участниками
-                new Cat(100, 100),
-                new Dog(100, 100, 100),
-                new Duck(100, 100),
-        };
+        this.animals = animals;
     }
 
     public void showResults(Team team) {    //метод, показывающий результаты прохождения полосы препятствий
