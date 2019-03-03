@@ -16,9 +16,9 @@ public class Main {
                     {"1", "2", "3", "4"},
                     {"1", "2", "3", "4"},
             };
-            new Convert().makeInt(arr);
+            new StringToInt().makeInt(arr);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("StrArr must be " + new Convert().size_x + "x" + new Convert().size_y);
+            System.out.println("String array must be " + new StringToInt().size_x + "x" + new StringToInt().size_y);
         }
     }
 }
