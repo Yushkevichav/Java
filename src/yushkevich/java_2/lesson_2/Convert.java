@@ -2,14 +2,16 @@ package yushkevich.java_2.lesson_2;
 
 public class Convert {
     public void makeInt(StrArr s){
+        int size_x = 2;
+        int size_y = 2;
         int sum = 0;
         try {
             for (int i = 0; i < s.ar.length; i++) {
-                if (s.ar.length != 2) {
+                if (s.ar.length != size_x) {
                     throw new MyArraySizeException("StrArr must be 4x4");
                 }
                 for (int g = 0; g < s.ar.length; g++) {
-                    if (s.ar.length != 2) {
+                    if (s.ar.length != size_y) {
                         throw new MyArraySizeException("StrArr must be 4x4");
                     }
                     try {
