@@ -6,14 +6,19 @@ public class StrArr {
 
     public StrArr(String ar[][]) {
         this.ar = ar;
-        this.ar = new String[2][2];
     }
 
-    public void makeInt(StrArr s) {
-        for (String[] i : ar) {
-            for (String[] g : ar) {
-                System.out.println(ar);
+    public void makeInt(StrArr s) throws MyArraySizeException, MyArrayDataException {
+        if (ar.length != 4) {
+            throw new MyArraySizeException("StrArr must be 4x4");
+        }
+        try {
+            for (String i[] : ar) {
+                for (String g[] : ar) {
+                }
             }
+        } catch (MyArraySizeException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
