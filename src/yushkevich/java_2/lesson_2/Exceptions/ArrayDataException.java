@@ -9,6 +9,6 @@ package yushkevich.java_2.lesson_2.Exceptions;
 
 public class ArrayDataException extends RuntimeException {
     public ArrayDataException(int i, int g){
-        super("Error in: " + i + "; " + g);
+        super("Error in: " + i + "." + g);
     }
 }
