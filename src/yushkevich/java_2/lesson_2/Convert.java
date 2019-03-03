@@ -8,9 +8,9 @@
 package yushkevich.java_2.lesson_2;
 
 public class Convert {
-    public void makeInt(StrArr s){
-        int size_x = 2;
-        int size_y = 2;
+    public void makeInt(StrArr s) {
+        int size_x = 4;
+        int size_y = 4;
         int sum = 0;
         try {
             for (int i = 0; i < s.ar.length; i++) {
