@@ -8,7 +8,7 @@ public class StrArr {
         this.ar = ar;
     }
 
-    public void makeInt(StrArr s) throws MyArraySizeException, MyArrayDataException {
+    public void makeInt(StrArr s) {
         if (ar.length != 4) {
             throw new MyArraySizeException("StrArr must be 4x4");
         }
