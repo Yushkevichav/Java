@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         String[] name = {"Клара", "У", "Карл", "Крала", "Кларнет", "Карл", "У", "Клара", "Свистнул", "Кораллы", "Кларнет"};
 
-        HashMap<String, Integer> word = new HashMap<>();
+        Map<String, Integer> word = new HashMap<>();
 
         for (String some : name) {
             word.put(some, word.getOrDefault(some, 0) + 1);
