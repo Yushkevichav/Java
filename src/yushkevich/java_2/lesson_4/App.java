@@ -60,7 +60,9 @@ public class App extends JFrame {
 
         p2.add(jta2);
         jb.addActionListener(e -> {
-            sendMessage();
+            if (jta2.getText().length() > 0) {
+                sendMessage();
+            }
         });
         p2.add(new JScrollPane(jta2));
         jta2.setLineWrap(true);
