@@ -3,10 +3,7 @@ package yushkevich.java_2.lesson_4;
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.util.Date;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -25,7 +22,7 @@ public class App extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
-        setLayout(new GridLayout(3, 1));
+        setLayout(new GridLayout(2, 1));
         JButton jb = new JButton("Отправить");
 
 
@@ -38,7 +35,7 @@ public class App extends JFrame {
         p1.add(new JScrollPane(jta1));
         p1.add(jb);
         jb.addActionListener(e -> {
-            jta1.append("skdjflsjdf\n\nsfkjhsdh\n\r" + System.currentTimeMillis());
+            jta1.append("Отправлено в: " + new Date() + "\n\r" + "\n\r");
         });
 
 
@@ -48,42 +45,10 @@ public class App extends JFrame {
         JTextField jTextField = new JTextField();
 
 
-        jTextField.addActionListener(e -> {
-            JFrame jFrame = new JFrame();
-            JTextArea jta = new JTextArea();
-            jta.setText(jTextField.getText());
-            jFrame.add(jta);
-            jFrame.setBounds(500, 200, 300, 300);
-            jFrame.setVisible(true);
-
-            System.out.println(jTextField.getText());
-
-            jTextField.setText("");
-        });
-
         p2.add(jTextField);
-
 
         add(p1);
         add(p2);
-
-
-        JButton jbf = new JButton("firstButton");
-        jbf.setBounds(50, 50, 100, 100);
-        jbf.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.out.println("pushed me");
-            }
-        });
-
-        jbf.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mousePressed(MouseEvent e) {
-                System.out.println("you pressed me!");
-            }
-        });
-
 
         setVisible(true);
 
