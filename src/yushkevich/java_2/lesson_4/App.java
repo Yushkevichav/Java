@@ -33,9 +33,6 @@ public class App extends JFrame {
         jta1.setEditable(false);
         p1.add(new JScrollPane(jta1));
         p1.add(jb);
-        jb.addActionListener(e -> {
-            jta1.append("Отправлено в: " + new Date() + "\n\r" + "\n\r");
-        });
 
 
         JPanel p2 = new JPanel();
@@ -43,8 +40,11 @@ public class App extends JFrame {
         p2.setLayout(new GridLayout(1, 1));
         JTextField jtf1 = new JTextField();
         p2.add(jtf1);
-        jtf1.addActionListener(e -> {
-            System.out.println("mes" + jtf1.getText());
+        jb.addActionListener(e -> {
+            String out = jtf1.getText();
+            jta1.append(new Date() + ": " + out + "\n\r" + "\n\r");
+            jtf1.setText("");
+            jtf1.grabFocus();
         });
 
 
