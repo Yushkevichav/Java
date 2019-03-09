@@ -14,13 +14,12 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
 
 public class App extends JFrame {
     JTextArea jta1 = new JTextArea();
-    JTextField jtf1 = new JTextField();
+    JTextArea jta2 = new JTextArea();
     Date dateNow = new Date();
     SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm:ss a zzz");
 
@@ -50,12 +49,15 @@ public class App extends JFrame {
         p2.setLayout(new GridLayout(1, 1));
 
 
-        p2.add(jtf1);
+        p2.add(jta2);
         jb.addActionListener(e -> {
             sendMessage();
         });
+        p2.add(new JScrollPane(jta2));
+        jta2.setLineWrap(true);
+        jta2.setWrapStyleWord(true);
 
-        jtf1.addKeyListener(new KeyAdapter() {
+        jta2.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) sendMessage();
@@ -69,10 +71,10 @@ public class App extends JFrame {
         setVisible(true);
     }
     void sendMessage () {
-        String out = jtf1.getText();
+        String out = jta2.getText();
         jta1.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
-        jtf1.setText("");
-        jtf1.grabFocus();
+        jta2.setText("");
+        jta2.grabFocus();
     }
 
 
