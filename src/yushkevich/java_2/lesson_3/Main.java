@@ -1,3 +1,10 @@
+/**
+ * Java 2. Lesson 3
+ *
+ * @author Andrey Yushkevich
+ * version dated March 06, 2019
+ */
+
 package yushkevich.java_2.lesson_3;
 
 import java.util.*;

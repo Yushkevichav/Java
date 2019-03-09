@@ -1,3 +1,10 @@
+/**
+ * Java 2. Lesson 4
+ *
+ * @author Andrey Yushkevich
+ * version dated March 09, 2019
+ */
+
 package yushkevich.java_2.lesson_4;
 
 import java.awt.Color;
@@ -30,6 +37,8 @@ public class App extends JFrame {
 
 
         setLayout(new GridLayout(2, 1));
+
+
         JButton jb = new JButton("Отправить");
 
 
@@ -56,7 +65,6 @@ public class App extends JFrame {
         p2.add(new JScrollPane(jta2));
         jta2.setLineWrap(true);
         jta2.setWrapStyleWord(true);
-
         jta2.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -68,9 +76,12 @@ public class App extends JFrame {
         add(p1);
         add(p2);
 
+
         setVisible(true);
     }
-    void sendMessage () {
+
+
+    void sendMessage() {
         String out = jta2.getText();
         jta1.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
         jta2.setText("");
