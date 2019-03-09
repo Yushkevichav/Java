@@ -27,11 +27,10 @@ public class App extends JFrame {
 
 
         JPanel p1 = new JPanel();
-
         p1.setBackground(Color.GREEN);
         p1.setLayout(new BoxLayout(p1, BoxLayout.Y_AXIS));
         JTextArea jta1 = new JTextArea();
-
+        jta1.setEditable(false);
         p1.add(new JScrollPane(jta1));
         p1.add(jb);
         jb.addActionListener(e -> {
@@ -42,10 +41,12 @@ public class App extends JFrame {
         JPanel p2 = new JPanel();
         p2.setBackground(Color.LIGHT_GRAY);
         p2.setLayout(new GridLayout(1, 1));
-        JTextField jTextField = new JTextField();
+        JTextField jtf1 = new JTextField();
+        p2.add(jtf1);
+        jtf1.addActionListener(e -> {
+            System.out.println("mes" + jtf1.getText());
+        });
 
-
-        p2.add(jTextField);
 
         add(p1);
         add(p2);
