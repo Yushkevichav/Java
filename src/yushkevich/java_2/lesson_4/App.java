@@ -1,8 +1,6 @@
 package yushkevich.java_2.lesson_4;
 
 import java.awt.Color;
-import java.awt.Container;
-import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.awt.event.ActionEvent;
@@ -27,27 +25,21 @@ public class App extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
-        // setLayout(new BoxLayout(getContentPane(), BoxLayout.PAGE_AXIS));
-        setLayout(new GridLayout(3,1));
-        JButton[] jb = new JButton[10];
-        for (int i = 0; i < jb.length; i++) {
-            jb[i] = new JButton("button:" + i);
-            // add(jb[i]);
-        }
+        setLayout(new GridLayout(3, 1));
+        JButton jb = new JButton("Отправить");
+
 
         JPanel p1 = new JPanel();
 
         p1.setBackground(Color.GREEN);
         p1.setLayout(new BoxLayout(p1, BoxLayout.Y_AXIS));
-        // p1.setLayout(new FlowLayout());
         JTextArea jta1 = new JTextArea();
 
         p1.add(new JScrollPane(jta1));
-        p1.add(jb[0]);
-        jb[0].addActionListener(e->{
+        p1.add(jb);
+        jb.addActionListener(e -> {
             jta1.append("skdjflsjdf\n\nsfkjhsdh\n\r" + System.currentTimeMillis());
         });
-
 
 
         JPanel p2 = new JPanel();
@@ -56,7 +48,7 @@ public class App extends JFrame {
         JTextField jTextField = new JTextField();
 
 
-        jTextField.addActionListener(e->{
+        jTextField.addActionListener(e -> {
             JFrame jFrame = new JFrame();
             JTextArea jta = new JTextArea();
             jta.setText(jTextField.getText());
@@ -64,14 +56,12 @@ public class App extends JFrame {
             jFrame.setBounds(500, 200, 300, 300);
             jFrame.setVisible(true);
 
-            // add(jFrame);
             System.out.println(jTextField.getText());
 
             jTextField.setText("");
         });
 
         p2.add(jTextField);
-
 
 
         add(p1);
@@ -93,8 +83,6 @@ public class App extends JFrame {
                 System.out.println("you pressed me!");
             }
         });
-
-        // add(jbf);
 
 
         setVisible(true);
