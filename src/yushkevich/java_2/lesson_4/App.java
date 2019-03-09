@@ -5,6 +5,7 @@ import java.awt.GridLayout;
 import java.awt.HeadlessException;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.swing.BoxLayout;
@@ -20,6 +21,8 @@ import javax.swing.WindowConstants;
 public class App extends JFrame {
     JTextArea jta1 = new JTextArea();
     JTextField jtf1 = new JTextField();
+    Date dateNow = new Date();
+    SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm:ss a zzz");
 
     public App() throws HeadlessException {
         setBounds(500, 200, 400, 400);
@@ -67,7 +70,7 @@ public class App extends JFrame {
     }
     void sendMessage () {
         String out = jtf1.getText();
-        jta1.append(new Date() + ": " + out + "\n\r" + "\n\r");
+        jta1.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
         jtf1.setText("");
         jtf1.grabFocus();
     }
