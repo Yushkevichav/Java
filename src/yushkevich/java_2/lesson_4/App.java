@@ -38,11 +38,14 @@ public class App extends JFrame {
         jta1.setEditable(false);
         p1.add(new JScrollPane(jta1));
         p1.add(jb);
+        jta1.setLineWrap(true);
+        jta1.setWrapStyleWord(true);
 
 
         JPanel p2 = new JPanel();
         p2.setBackground(Color.LIGHT_GRAY);
         p2.setLayout(new GridLayout(1, 1));
+
 
         p2.add(jtf1);
         jb.addActionListener(e -> {
