@@ -15,20 +15,14 @@ import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.WindowConstants;
+import javax.swing.*;
 
 
 public class App extends JFrame {
-    JTextArea jta1 = new JTextArea();
-    JTextArea jta2 = new JTextArea();
+    JTextArea jTextArea = new JTextArea();
+    JTextField jTextField = new JTextField();
     Date dateNow = new Date();
-    SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm:ss a zzz");
+    SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy 'в' hh:mm:ss a zzz");
 
     public App() throws HeadlessException {
         setBounds(325, 200, 800, 500);
@@ -46,11 +40,11 @@ public class App extends JFrame {
         p1.setBackground(Color.GREEN);
         p1.setLayout(new BoxLayout(p1, BoxLayout.Y_AXIS));
 
-        jta1.setEditable(false);
-        p1.add(new JScrollPane(jta1));
+        jTextArea.setEditable(false);
+        p1.add(new JScrollPane(jTextArea));
         p1.add(jb);
-        jta1.setLineWrap(true);
-        jta1.setWrapStyleWord(true);
+        jTextArea.setLineWrap(true);
+        jTextArea.setWrapStyleWord(true);
 
 
         JPanel p2 = new JPanel();
@@ -58,19 +52,19 @@ public class App extends JFrame {
         p2.setLayout(new GridLayout(1, 1));
 
 
-        p2.add(jta2);
+        p2.add(jTextField);
         jb.addActionListener(e -> {
-            if (jta2.getText().length() > 0) {
+            if (jTextField.getText().length() > 0) {
                 sendMessage();
             }
         });
-        p2.add(new JScrollPane(jta2));
-        jta2.setLineWrap(true);
-        jta2.setWrapStyleWord(true);
-        jta2.addKeyListener(new KeyAdapter() {
+        p2.add(new JScrollPane(jTextField));
+        jTextField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) sendMessage();
+                if (jTextField.getText().length() > 0) {
+                    if (e.getKeyCode() == KeyEvent.VK_ENTER) sendMessage();
+                }
             }
         });
 
@@ -84,10 +78,10 @@ public class App extends JFrame {
 
 
     void sendMessage() {
-        String out = jta2.getText();
-        jta1.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
-        jta2.setText("");
-        jta2.grabFocus();
+        String out = jTextField.getText();
+        jTextArea.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
+        jTextField.setText("");
+        jTextField.grabFocus();
     }
 
 
