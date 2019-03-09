@@ -22,7 +22,7 @@ public class App extends JFrame {
     JTextArea jTextArea = new JTextArea();
     JTextField jTextField = new JTextField();
     Date dateNow = new Date();
-    SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yyyy 'в' hh:mm:ss a zzz");
+    SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yy 'в' HH:mm:ss");
 
     public App() throws HeadlessException {
         setBounds(325, 200, 800, 500);
@@ -79,13 +79,8 @@ public class App extends JFrame {
 
     void sendMessage() {
         String out = jTextField.getText();
-        jTextArea.append(formatForDateNow.format(dateNow) + ": " + out + "\n\r" + "\n\r");
+        jTextArea.append(formatForDateNow.format(dateNow) + ": " + out + "\n");
         jTextField.setText("");
         jTextField.grabFocus();
-    }
-
-
-    public static void main(String[] args) {
-        new App();
     }
 }
