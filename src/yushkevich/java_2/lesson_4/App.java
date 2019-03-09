@@ -25,7 +25,7 @@ public class App extends JFrame {
     SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm:ss a zzz");
 
     public App() throws HeadlessException {
-        setBounds(500, 200, 400, 400);
+        setBounds(325, 200, 800, 500);
         setTitle("My application");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
