@@ -39,7 +39,6 @@ public class App extends JFrame {
         JPanel p1 = new JPanel();
         p1.setBackground(Color.GREEN);
         p1.setLayout(new BoxLayout(p1, BoxLayout.Y_AXIS));
-
         jTextArea.setEditable(false);
         p1.add(new JScrollPane(jTextArea));
         p1.add(jb);
@@ -50,15 +49,13 @@ public class App extends JFrame {
         JPanel p2 = new JPanel();
         p2.setBackground(Color.LIGHT_GRAY);
         p2.setLayout(new GridLayout(1, 1));
-
-
         p2.add(jTextField);
+        p2.add(new JScrollPane(jTextField));
         jb.addActionListener(e -> {
             if (jTextField.getText().length() > 0) {
                 sendMessage();
             }
         });
-        p2.add(new JScrollPane(jTextField));
         jTextField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
