@@ -19,10 +19,10 @@ import javax.swing.*;
 
 
 public class App extends JFrame {
-    JTextArea jTextArea = new JTextArea();
-    JTextField jTextField = new JTextField();
-    Date dateNow = new Date();
-    SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yy 'в' HH:mm:ss");
+    private JTextArea jTextArea = new JTextArea();
+    private JTextField jTextField = new JTextField();
+    private Date dateNow = new Date();
+    private SimpleDateFormat formatForDateNow = new SimpleDateFormat("dd.MM.yy 'в' HH:mm:ss");
 
     public App() throws HeadlessException {
         setBounds(325, 200, 800, 500);
