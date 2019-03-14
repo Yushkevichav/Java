@@ -1,8 +1,8 @@
 package yushkevich.java_2.lesson_5;
 
 public class Arrays {
-    private static final int SIZE = 10000000;
-    private static final int HALF = SIZE / 2;
+    private final int SIZE = 10000000;
+    private final int HALF = SIZE / 2;
 
     public float[] calculate(float[] arr) {
         for (int i = 0; i < arr.length; i++)
@@ -12,7 +12,9 @@ public class Arrays {
 
     public void runOneThread() {
         float[] arr = new float[SIZE];
-        for (int i = 0; i < arr.length; i++) arr[i] = 1.0f;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 1.0f;
+        }
         long a = System.currentTimeMillis();
         calculate(arr);
         System.out.println("One thread method ends with: " + (System.currentTimeMillis() - a));
@@ -22,7 +24,9 @@ public class Arrays {
         float[] arr = new float[SIZE];
         float[] arr1 = new float[HALF];
         float[] arr2 = new float[HALF];
-        for (int i = 0; i < arr.length; i++) arr[i] = 1.0f;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 1.0f;
+        }
 
         long a = System.currentTimeMillis();
         System.arraycopy(arr, 0, arr1, 0, HALF);
