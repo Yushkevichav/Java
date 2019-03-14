@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 /**
  * Java 1. Lesson 8. Game Tic Tac Toe
- * Class: Main-Class
+ * Class: Arrays-Class
  *
  * @author Sergey Iryupin
  * @version 0.3.5 dated Dec 27, 2018
