@@ -8,7 +8,7 @@
 package yushkevich.java_2.lesson_5;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         new Arrays().oneThread();
         new Arrays().twoThreads();
     }

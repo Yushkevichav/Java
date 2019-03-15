@@ -8,8 +8,9 @@
 package yushkevich.java_2.lesson_5;
 
 public class Arrays {
-    private final int SIZE = 10000000;
+    private final int SIZE = 4;
     private final int HALF = SIZE / 2;
+
 
     public float[] calculate(float[] arr) {
         for (int i = 0; i < arr.length; i++) {
@@ -17,6 +18,7 @@ public class Arrays {
         }
         return arr;
     }
+
 
     public void oneThread() {
         float[] arr = new float[SIZE];
@@ -28,7 +30,8 @@ public class Arrays {
         System.out.println("One thread ends with: " + (System.currentTimeMillis() - a));
     }
 
-    public void twoThreads() {
+
+    public void twoThreads() throws InterruptedException {
         float[] arr = new float[SIZE];
         float[] arr1 = new float[HALF];
         float[] arr2 = new float[HALF];
@@ -40,19 +43,27 @@ public class Arrays {
         System.arraycopy(arr, 0, arr1, 0, HALF);
         System.arraycopy(arr, HALF, arr2, 0, HALF);
 
-        new Thread() {
-            public synchronized void run() {
+        Thread thread1 = new Thread() {
+            public void run() {
                 float[] a1 = calculate(arr1);
                 System.arraycopy(a1, 0, arr1, 0, a1.length);
             }
-        }.start();
+        };
 
-        new Thread() {
-            public synchronized void run() {
+
+        Thread thread2 = new Thread() {
+            public void run() {
                 float[] a2 = calculate(arr2);
                 System.arraycopy(a2, 0, arr2, 0, a2.length);
             }
-        }.start();
+        };
+
+
+        thread1.start();
+        thread2.start();
+        thread1.join();
+        thread2.join();
+
 
         System.arraycopy(arr1, 0, arr, 0, HALF);
         System.arraycopy(arr2, 0, arr, HALF, HALF);
