@@ -58,11 +58,15 @@ public class Arrays {
             }
         };
 
-
         thread1.start();
         thread2.start();
-        thread1.join();
-        thread2.join();
+
+        try {
+            thread1.join();
+            thread2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
         System.arraycopy(arr1, 0, arr, 0, HALF);
