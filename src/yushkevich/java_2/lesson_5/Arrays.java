@@ -31,7 +31,7 @@ public class Arrays {
     }
 
 
-    public void twoThreads() throws InterruptedException {
+    public void twoThreads() {
         float[] arr = new float[SIZE];
         float[] arr1 = new float[HALF];
         float[] arr2 = new float[HALF];
