@@ -12,7 +12,7 @@ public class Main {
         //по дз
         new ExampleOne().runOneThread();
         new ExampleOne().runTwoThreads();
-        //переделано
+        //переделано (время обработки намного меньше)
         new ExampleTwo().runOneThread();
         new ExampleTwo().runTwoThreads();
     }
