@@ -18,17 +18,17 @@ public class Arrays {
         return arr;
     }
 
-    public void runOneThread() {
+    public void oneThread() {
         float[] arr = new float[SIZE];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = 1.0f;
         }
         long a = System.currentTimeMillis();
         calculate(arr);
-        System.out.println("One thread method ends with: " + (System.currentTimeMillis() - a));
+        System.out.println("One thread ends with: " + (System.currentTimeMillis() - a));
     }
 
-    public void runTwoThreads() {
+    public void twoThreads() {
         float[] arr = new float[SIZE];
         float[] arr1 = new float[HALF];
         float[] arr2 = new float[HALF];
