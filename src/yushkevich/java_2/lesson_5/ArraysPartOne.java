@@ -7,7 +7,7 @@
 
 package yushkevich.java_2.lesson_5;
 
-public class Arrays {
+public class ArraysPartOne {
     private final int SIZE = 10000000;
     private final int HALF = SIZE / 2;
 
