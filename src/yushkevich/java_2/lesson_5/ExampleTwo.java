@@ -41,14 +41,14 @@ public class ExampleTwo {
         System.arraycopy(arr, HALF, arr2, 0, HALF);
 
         new Thread() {
-            public void run() {
+            public synchronized void run() {
                 float[] a1 = calculate(arr1);
                 System.arraycopy(a1, 0, arr1, 0, a1.length);
             }
         }.start();
 
         new Thread() {
-            public void run() {
+            public synchronized void run() {
                 float[] a2 = calculate(arr2);
                 System.arraycopy(a2, 0, arr2, 0, a2.length);
             }
