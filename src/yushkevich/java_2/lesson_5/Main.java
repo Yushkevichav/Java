@@ -9,11 +9,7 @@ package yushkevich.java_2.lesson_5;
 
 public class Main {
     public static void main(String[] args) {
-        //по дз
-        new ExampleOne().runOneThread();
-        new ExampleOne().runTwoThreads();
-        //переделано (время обработки намного меньше)
-        new ExampleTwo().runOneThread();
-        new ExampleTwo().runTwoThreads();
+        new Arrays().runOneThread();
+        new Arrays().runTwoThreads();
     }
 }
