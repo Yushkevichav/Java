@@ -8,7 +8,7 @@
 package yushkevich.java_2.lesson_5;
 
 public class Arrays {
-    private final int SIZE = 10;
+    private final int SIZE = 10000000;
     private final int HALF = SIZE / 2;
 
     public float[] calculate(float[] arr) {
