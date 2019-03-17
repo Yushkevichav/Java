@@ -1,6 +1,6 @@
 package yushkevich.java_2.lesson_6.Methods;
 
-import yushkevich.java_2.lesson_6.Clients.ClientChat;
+import yushkevich.java_2.lesson_6.Variables;
 
 import java.io.IOException;
 
@@ -9,8 +9,8 @@ public class InitReceiver {
         Thread thread = new Thread(() -> {
             while (true) {
                 try {
-                    String echoMessage = ClientChat.inputStream.readUTF();
-                    ClientChat.outputTextArea.append(echoMessage);
+                    String echoMessage = Variables.inputStream.readUTF();
+                    Variables.outputTextArea.append(echoMessage);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
