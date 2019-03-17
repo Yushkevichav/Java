@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_6;
+package yushkevich.java_2.lesson_6.work;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
