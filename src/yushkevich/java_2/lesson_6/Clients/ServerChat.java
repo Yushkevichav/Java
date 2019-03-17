@@ -1,4 +1,4 @@
-package yushkevich.java_2.lesson_6.work;
+package yushkevich.java_2.lesson_6.Clients;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ChatServer {
-    public static void main(String[] args) throws IOException {
+public class ServerChat {
+    public ServerChat() throws IOException {
         try (ServerSocket ss = new ServerSocket(8080)) {
             System.out.println("server started");
             Socket socket = ss.accept();
