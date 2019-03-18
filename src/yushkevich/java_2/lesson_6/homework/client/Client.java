@@ -5,11 +5,11 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class Client {
-    final String SERVER_ADDRESS = "localhost";
-    final int SERVER_PORT = 8080;
-    Socket socket;
-    Scanner in, console;
-    PrintWriter out;
+    private final String SERVER_ADDRESS = "localhost";
+    private final int SERVER_PORT = 8080;
+    private Socket socket;
+    private Scanner in, console;
+    private PrintWriter out;
 
     public Client() {
         //Connection params, IO settings
