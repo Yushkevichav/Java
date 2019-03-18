@@ -22,7 +22,7 @@ public class Client {
         }
 
         //Monitoring input messages from server
-        new Thread(new Runnable() {
+        Thread thread1 = new Thread() {
             @Override
             public void run() {
                 try {
@@ -37,8 +37,9 @@ public class Client {
                     System.out.println("Good bye!");
                 }
             }
-        }).start();
+        };
 
+        thread1.start();
         startMessaging();
     }
 

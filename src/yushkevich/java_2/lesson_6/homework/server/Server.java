@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.*;
 
 public class Server {
-    public static void main(String[] args) {
+    public Server() {
         ServerSocket server = null;
         Socket socket = null;
 
